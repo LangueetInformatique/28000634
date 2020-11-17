@@ -1,4 +1,4 @@
-package Devoir01;
+package devoir01;
 
 public class Conditionnel4bis {
 	

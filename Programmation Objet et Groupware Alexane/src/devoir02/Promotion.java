@@ -1,4 +1,4 @@
-package Devoir02;
+package devoir02;
 
 import java.util.ArrayList;
 

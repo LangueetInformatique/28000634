@@ -8,7 +8,7 @@
 //Exercice 4 : Ajouter les instructions structurées par des branchements conditionnels permettant
 //d’obtenir la médiane des variables p1, p2, p3, p4, p5 dans la variable p6.
 
-package Devoir01;
+package devoir01;
 
 public class Conditionnel4{
 	
