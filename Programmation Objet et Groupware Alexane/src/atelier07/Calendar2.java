@@ -10,7 +10,7 @@ public class Calendar2 extends Calendar {
 	// la méthode  creation()  affichera  la  date  et  l’heure  de la  création  de  l’objet,  
 	// la méthode la date et l’heure courante, la méthode duree() affiche le nombre de secondes depuis la création de l'objet
 	
-	@Override
+
 	public void add(int arg0, int arg1) {
 		// TODO Auto-generated method stub
 

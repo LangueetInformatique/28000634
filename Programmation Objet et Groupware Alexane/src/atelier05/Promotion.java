@@ -26,13 +26,15 @@ public class Promotion {
 			System.out.println(liste_etudiant.get(1)); // on peut trouver un étudiant dans la liste
 		
 			System.out.println(liste_etudiant); // ici on récupère toute la liste des étudiants de la promo
-			System.out.println(liste_etudiant.size()); // on récupère la quantité d'étudiants dans la promo
-		
+			
+			System.out.println(liste_etudiant.size());
+			// on récupère la quantité d'étudiants dans la promo
 	// une promotion d'étudiant permet également de calculer la moyenne des moyennes des étudiants
-	
-	
+	}	
 	private double MoyennePromo() {
+		return MoyennePromo;
 		// TODO Auto-generated method stub
 	}
-	}
+}
+
 	
