@@ -7,9 +7,9 @@ public class TestCalendar2 {
 			
 			System.out.println(exemple.getCours());		
 			
+			exemple.afficher(exemple);
 			exemple.duree();
 			exemple.creation(exemple);
-			exemple.afficher(exemple);
 
 		}
 
