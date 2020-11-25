@@ -8,7 +8,6 @@ import java.util.TimeZone;
 
 //Créer la  classe  Calendar2  dérivée  de  Calendar  implémentant 
 //attribut cours et trois nouvelles méthodes creation, afficher, duree 
-//La méthode creation() affichera la date et l’heure de la création de l’objet
 
 @SuppressWarnings("serial")
 public class Calendar2 extends Calendar {
