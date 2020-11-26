@@ -7,4 +7,9 @@ public class Keyboard {
 		return 0;
 	}
 
+	public static String getString(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
