@@ -11,4 +11,5 @@ public class TroisDes extends lancerDés {
 	public int getVariable1;
 	
 	public int getVariable2;
+	
 }

@@ -1,6 +1,7 @@
 package devoir05;
 
 import atelier08.Aleat;
+import atelier08.E421;
 
 public abstract class lancerDés {
 	/*
@@ -29,6 +30,11 @@ public abstract class lancerDés {
 		Aleat a = new Aleat(6);
 		int dé3= a.get();
 		System.out.println(dé3);
+	}
+	
+	public void leverException() throws E421 {
+        // ...
+        throw new E421(name);
 	}
 
 	// On désire traiter le cas où les valeurs 4, 2 et 1 sortent dans l’ordre ou le désordre.
