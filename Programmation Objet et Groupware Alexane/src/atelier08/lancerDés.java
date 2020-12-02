@@ -1,6 +1,6 @@
 package atelier08;
 
-public abstract class lancerDÃ©s {
+public abstract class lancerDés {
 	private String name;
 
 	/*
@@ -20,12 +20,12 @@ public abstract class lancerDÃ©s {
 		// TODO Auto-generated method stub
 			System.out.println("Jeter les 3 dÃ©s: ");
 			Aleat a = new Aleat(6);
-			int dÃ©1= a.get();
-			int dÃ©2= a.get();
-			int dÃ©3= a.get();
-			System.out.println(dÃ©1);
-			System.out.println(dÃ©2);
-			System.out.println(dÃ©3);
+			int dé1= a.get();
+			int dé2= a.get();
+			int dé3= a.get();
+			System.out.println(dé1);
+			System.out.println(dé2);
+			System.out.println(dé3);
 
 			}
 

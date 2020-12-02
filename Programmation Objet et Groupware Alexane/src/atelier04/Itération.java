@@ -7,7 +7,7 @@
 
 package atelier04;
 
-	public class ItÃ©ration {
+	public class Itération {
 
 		public static void main(String[] args) {
 
