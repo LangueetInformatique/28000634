@@ -1,15 +1,24 @@
 package atelier08;
 
-public class lancerDés {
+public abstract class lancerDés {
+	private String name;
+
 	/*
 	Question 2 : Ecrire une méthode lancerDés simulant un lancer de trois dés, avec le nom du
 	lanceur en paramètre et renvoyant les trois valeurs dans une instance de la classe TroisDés (à
-	écrire). Tester cette méthode.
+	écrire). Tester cette méthode
 	*/
+	public void Lanceur(String name) {
+		this.name = name; 
+	}
+	
+	public String getName() {
+		return name;
+	}
 
-	public static void main(String[] args) {
+	public static void main(String args[]) {
 		// TODO Auto-generated method stub
-			System.out.println("Jetter les 3 dés: ");
+			System.out.println("Jeter les 3 dés: ");
 			Aleat a = new Aleat(6);
 			int dé1= a.get();
 			int dé2= a.get();
@@ -20,5 +29,6 @@ public class lancerDés {
 
 			}
 
+	// On désire traiter le cas où les valeurs 4, 2 et 1 sortent dans l’ordre ou le désordre.
 		}
-
+	
