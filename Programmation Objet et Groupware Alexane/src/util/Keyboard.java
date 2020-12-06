@@ -1,5 +1,7 @@
 package util;
 
+import java.io.File;
+
 public class Keyboard {
 
 	public static int getInt(String string) {
@@ -7,7 +9,7 @@ public class Keyboard {
 		return 0;
 	}
 
-	public static String getString(String string) {
+	public static String getString(File fichier3) {
 		// TODO Auto-generated method stub
 		return null;
 	}

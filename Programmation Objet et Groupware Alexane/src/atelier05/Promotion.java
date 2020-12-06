@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Promotion {
 	String name;
-	int ann�e;
+	int annee;
 	ArrayList<Etudiant> liste_etudiant;
 	double MoyennePromo;
 	
@@ -12,7 +12,7 @@ public class Promotion {
 		return name;
 	}
 	public int getAnnee() {
-		return ann�e;
+		return annee;
 	}
 	
 	// une promotion d'étudiants a un certain nombre d'étudiants
@@ -31,6 +31,7 @@ public class Promotion {
 			// on récupère la quantité d'étudiants dans la promo
 	// une promotion d'étudiant permet également de calculer la moyenne des moyennes des étudiants
 	}	
+	@SuppressWarnings("unused")
 	private double MoyennePromo() {
 		return MoyennePromo;
 		// TODO Auto-generated method stub
