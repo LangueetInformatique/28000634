@@ -9,9 +9,12 @@ import javax.swing.JFileChooser;
 
 import util.Keyboard;
 
-public class FileInputStreamTP7 {
+public class FileInputStreamTP7 extends FileInputStream {
 
-	public FileInputStreamTP7(File fin) {
+
+
+	public FileInputStreamTP7(File file) throws FileNotFoundException {
+		super(file);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -63,16 +66,16 @@ public class FileInputStreamTP7 {
 		return fichier4;
 	}
 	
-	public static File Propriétés(File fichier5) throws IOException {
+	/* public static File Propriétés(File fichier5) throws IOException {
 
 			return fichier5.lastModified();
 	
 	     
 	}
 	
-	public static void CompareTo(Class NewClass) {
+	
 		
-		
-	}
+		*/
+	
 }
 
