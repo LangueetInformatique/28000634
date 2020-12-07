@@ -1,6 +1,6 @@
 package atelier08;
 
-public abstract class lancerDés {
+public abstract class LancerDÃ©s {
 	private String name;
 
 	/*
@@ -20,15 +20,14 @@ public abstract class lancerDés {
 		// TODO Auto-generated method stub
 			System.out.println("Jeter les 3 dÃ©s: ");
 			Aleat a = new Aleat(6);
-			int dé1= a.get();
-			int dé2= a.get();
-			int dé3= a.get();
-			System.out.println(dé1);
-			System.out.println(dé2);
-			System.out.println(dé3);
+			int dÃ©1= a.get();
+			int dÃ©2= a.get();
+			int dÃ©3= a.get();
+			System.out.println(dÃ©1);
+			System.out.println(dÃ©2);
+			System.out.println(dÃ©3);
 
 			}
 
 	// On dÃ©sire traiter le cas oÃ¹ les valeurs 4, 2 et 1 sortent dans lâ€™ordre ou le dÃ©sordre.
 		}
-	
