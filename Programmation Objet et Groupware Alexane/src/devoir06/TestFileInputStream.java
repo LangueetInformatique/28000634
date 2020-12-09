@@ -14,7 +14,9 @@ public class TestFileInputStream {
 		
 		System.out.println(texte);
 		
-		File encore = FileInputStreamTP7.Propriétés(adelaide);
+		String encore = FileInputStreamTP7.Propriétés(adelaide);
+		
+		System.out.println(encore);
 	}
 
 }

@@ -1,11 +1,7 @@
 package atelier09;
 
 import java.io.*;
-import java.sql.Date;
-import java.text.SimpleDateFormat;
 import java.util.zip.DeflaterOutputStream;
-
-import javax.swing.JFileChooser;
 
 import util.Keyboard;
 
@@ -66,15 +62,8 @@ public class FileInputStreamTP7 extends FileInputStream {
 		return fichier4;
 	}
 	
-	/* public static File Propriétés(File fichier5) throws IOException {
+	public static String Propriétés(File fichier5) throws IOException {
 
-			return fichier5.lastModified();
+		return fichier5.lastModified() + fichier5.length() + fichier5.getName();
 	
-	     
-	}
-	
-	
-		
-		*/
-	
-}
+	}}
