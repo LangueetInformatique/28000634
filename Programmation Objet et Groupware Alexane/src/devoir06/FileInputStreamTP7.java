@@ -62,7 +62,7 @@ public class FileInputStreamTP7 extends FileInputStream {
 		return fichier4;
 	}
 	
-	public static String Propriétés(File fichier5) throws IOException {
+	public static String Proprietes(File fichier5) throws IOException {
 
 		return fichier5.lastModified() + fichier5.length() + fichier5.getName();
 	
