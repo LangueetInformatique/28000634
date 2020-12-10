@@ -17,6 +17,11 @@ public class MaPremiereFenetre {
 		Alexane.setBackground(Color.blue);
 		JMenu Prenoms = new JMenu();
 		Prenoms.setVisible(true);
-		
+		JMenuItem p1 = new JMenuItem("Alexane");
+		JMenuItem p2 = new JMenuItem("Isabelle");
+		JMenuItem p3 = new JMenuItem("Christine");
+		p1.setVisible(true);
+		p2.setVisible(true);
+		p3.setVisible(true);
 	}
 }
