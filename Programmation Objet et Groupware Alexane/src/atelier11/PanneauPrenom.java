@@ -3,7 +3,6 @@ package atelier11;
 import java.awt.Color;
 import java.awt.FlowLayout;
 
-import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JPanel;
@@ -16,6 +15,11 @@ public class PanneauPrenom extends JPanel {
 	 * une couleur, un nom sous forme d’une String, les prénoms sous forme 
 	 * d’un tableau de String. Ecrire une classe exécutable de test. */
 	
+		/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 		public PanneauPrenom(Color c, String nom, String[] prenoms) {
 			
 			setBackground(Color.BLUE);
