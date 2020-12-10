@@ -1,5 +1,7 @@
 package atelier11;
 
+import java.awt.Color;
+
 import javax.swing.*;
 
 public class MaPremiereFenetre {
@@ -12,6 +14,6 @@ public class MaPremiereFenetre {
 	public static void main(String args[]) {
 		JFrame Alexane = new JFrame();
 		Alexane.setVisible(true);
-		Alexane.setBackground();
+		Alexane.setBackground(Color.blue);
 	}
 }
