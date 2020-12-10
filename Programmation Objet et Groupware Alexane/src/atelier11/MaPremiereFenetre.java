@@ -18,13 +18,16 @@ public class MaPremiereFenetre {
 		JMenu Prenoms = new JMenu();
 		Prenoms.setVisible(true);
 		JMenuItem p1 = new JMenuItem("Alexane");
-		JMenuItem p2 = new JMenuItem("Isabelle");
-		JMenuItem p3 = new JMenuItem("Christine");
+		JMenuItem p2 = new JMenuItem("Chengwanli");
+		JMenuItem p3 = new JMenuItem("Ana");
+		JMenuItem p4 = new JMenuItem("Julien");
 		p1.setVisible(true);
 		p2.setVisible(true);
 		p3.setVisible(true);
+		p4.setVisible(true);
 		Prenoms.add(p1);
 		Prenoms.add(p2);
 		Prenoms.add(p3);
+		Prenoms.add(p4);
 	}
 }
