@@ -23,5 +23,8 @@ public class MaPremiereFenetre {
 		p1.setVisible(true);
 		p2.setVisible(true);
 		p3.setVisible(true);
+		Prenoms.add(p1);
+		Prenoms.add(p2);
+		Prenoms.add(p3);
 	}
 }
