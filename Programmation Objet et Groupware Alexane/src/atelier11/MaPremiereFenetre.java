@@ -15,5 +15,8 @@ public class MaPremiereFenetre {
 		JFrame Alexane = new JFrame();
 		Alexane.setVisible(true);
 		Alexane.setBackground(Color.blue);
+		JMenu Prenoms = new JMenu();
+		Prenoms.setVisible(true);
+		
 	}
 }
