@@ -1,93 +1,61 @@
 package devoir07;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-public class LireToutUnTexte_exo3 {
-		private String Stexte;
+public class LireToutUnTexte_devoir extends BufferedReader{
 
-		/**
-		 * lecture d'un fichier texte dans la chaîne sTexte
-		 * 
-		 * @param ft descripteur du fichier
-		 */
-		public LireToutUnTexte_exo3(File ft) {
-			String ligne = null;
-			Stexte = "";
+	public LireToutUnTexte_devoir(Reader in, int sz) throws IOException {
+		super(in, sz);
+	}
+	
+	public static Reader LireToutUnTexte_exo3_devoir (String l) throws IOException {
+		String monTexte = null;
+		Reader reader = new FileReader((String) monTexte);
+		
+		int Num = reader.read();
+		while(Num != -1) {
+		    char theChar = (char) Num;
 
-			try {
-				@SuppressWarnings("resource")
-				BufferedReader br = new BufferedReader(new FileReader(ft));
-				while ((ligne = br.readLine()) != null) {
-					Stexte += ligne + "\n";
-				}
+		    System.out.print(theChar);
 
-			}
-
-			catch (IOException e) {
-			}
+		    Num = reader.read();
+		    reader.close();
+		    System.out.println(monTexte);
 		}
 		
-		/** affichage du contenu de Stexte
-		 * 
-		 */
-		public void afficher() {
-			System.out.println(Stexte);
-		}
+		String ligne = null;
+		String Stexte = "";
 
-		/**
-		 * Recherche du nombre d'occurences de s dans sTexte
-		 * 
-		 * @param s chaîne cherchée
-		 * @return nombre d'occurences
-		 * 
-		 */
-		public int Chercher(String s) {
-
-			int deb = -1, nOcc = 0;
-			while ((deb = Stexte.indexOf(s, deb+1)) != -1)
-				nOcc++;
-			
-			return nOcc;
-		}
-
-		/**
-		 * Affichage du contexte des occurences de s dans sTexte
-		 * 
-		 * @param s      chaîne cherchée
-		 * @param string 
-		 * @param taille taille du contexte
-		 * @return 
-		 */
-		public static String ChercherVoir(String texte, String chaine, int Contexte_mots) {
-			
-			String contexte;
-			if(texte.contains(chaine)) {
-				
-				
-				int index_start = texte.indexOf(chaine) - (Contexte_mots) ;
-				int index_end = texte.indexOf(chaine) + (Contexte_mots + chaine.length());
-				
-				contexte = texte.substring(index_start,index_end);
+		try {
+			String ft = null;
+			@SuppressWarnings("resource")
+			BufferedReader br = new BufferedReader(new FileReader(ft));
+			while ((ligne = br.readLine()) != null) {
+				Stexte += ligne + "\n";
 			}
-			else {
-				
-				contexte = null;
-				System.out.println("la chaine cherchée n'est pas dans le texte");
-			}
-			
-			return contexte;
-		}
-		public static void ChercherER(String texte, String re) {
 
-		Pattern pt = Pattern.compile(re);
-		Matcher mt = pt.matcher(text);
+		}
+
+		catch (IOException e) {
+		}
+		return reader;
+		}
+		// méthode lire un texte, méthode Chercher, 
+		// méthode chercher voir et enfin 
+		// méthode chercherER qui cherche les occurrences de mots compatibles avec une expressions régulière donnée. 
+		// Ecrire une classe de test avec le fichier « avare.txt » en recherchant les flexions du verbe aimer. aim.*
+
+	public static boolean ChercherER(String texte, String re) {
+
+	Pattern pt = Pattern.compile(re);
+	Matcher mt = pt.matcher(texte);
+	
+	boolean result = mt.matches();
+	return result;
 		
-		boolean result = mt.matches();
-		return result;
-			
-			}
 		}
+	}
+
 
