@@ -80,17 +80,14 @@ public class LireToutUnTexte_exo3 {
 			
 			return contexte;
 		}
-		public static ChercherER(String texte, String re) {
+		public static void ChercherER(String texte, String re) {
 
 		Pattern pt = Pattern.compile(re);
 		Matcher mt = pt.matcher(text);
 		
 		boolean result = mt.matches();
-		System.out.println(result);
-		System.out.println(mt);
+		return result;
 			
 			}
 		}
-		
-	}
 
