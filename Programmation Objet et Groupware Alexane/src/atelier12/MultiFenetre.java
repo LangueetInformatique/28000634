@@ -17,11 +17,15 @@ public class MultiFenetre {
 		frame = new JFrame("MultiFenetre");
 		frame.setSize(nFen * 200, 500);
 		pan = new JPanel();
-		pan.setLayout(new GridLayout(1, nFen));
+		pan.setLayout(new GridLayout(2, nFen));
 		fen = new JTextPane[nFen];
 		for (int i = 0; i < nFen; i++) {
 		fen[i] = new JTextPane();
 		pan.add(fen[i]);
+		}
+		for (int j = 0; j < nFen; i++) {
+		fen[j] = new JTextPane();
+		pan.add(fen[j]);
 		}
 		frame.getContentPane().add(pan);
 		}
