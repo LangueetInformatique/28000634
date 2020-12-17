@@ -9,15 +9,14 @@ import java.awt.Container;
  */
 public class AfficherUneString {
 
-	public static void main(String[] args) {
-		
-		JTextArea ta = new JTextArea("Alexane");
-        
+	public static String Afficher (String a) {
+		JTextArea ta = new JTextArea(a);
 		JFrame fen = new JFrame("Essai");
 		Container jp = fen.getContentPane();
 		jp.add(ta);
 		jp.add(new JScrollPane(ta));
 		fen.setVisible(true);
+		return a;
 
 	}
 }
