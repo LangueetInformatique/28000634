@@ -3,10 +3,8 @@ package atelier12;
 import javax.swing.*;
 import java.awt.Container;
 
+// les classes abstraites ne peuvent pas s'exécuter. 
 
-/**
- * @author montacie
- */
 public class AfficherUneString {
 
 	public static String Afficher (String a) {
@@ -19,4 +17,5 @@ public class AfficherUneString {
 		return a;
 
 	}
+	
 }
