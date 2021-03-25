@@ -1,4 +1,4 @@
-//#include "swap.h"
+#include "swap.h"
 #include <iostream>
 #include <ostream>
 
@@ -52,13 +52,13 @@ int main() {
 	cout << "Après swap: " << a << " "<< b << endl;
 **/
 
-	int x;
-	int y;
+	float x;
+	float y;
 	cout << "Veuillez entrer deux entiers: " << endl;
 	cin >> x;
 	cin >> y;
 	cout << "Avant swap: " << x << " " << y << endl;
-	swap2(x, y);
+	swap1(x, y);
 	cout << "Après swap: " << x << " "<< y << endl;
 
 	return 0;
