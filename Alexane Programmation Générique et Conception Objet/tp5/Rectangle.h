@@ -15,12 +15,8 @@ private: // attributs
 public: //méthodes
 	T surface() const;
 	T perimetre() const;
-	//bool estContenu(T x, T y);
 
 	Rectangle(T x_a, T x_b, T y_a, T y_b);
-
-	//int surface = (abs(x_b)-abs(x_a))*(abs(y_a)-abs(y_b));
-	//int perimetre = 2*(abs(x_b)-abs(x_a))+2*(abs(y_a)-abs(y_b));
 
 };
 
