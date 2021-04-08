@@ -9,13 +9,12 @@
 
 int main(){
 
-	Rectangle<int>r(2, 7, 9, 6);
-	//cout << "Surface :" << r.surface <<endl;
-	//cout << "Périmètre :" << r.perimetre <<endl;
+	Rectangle<int>r(-2, -7, -9, 6);
+	cout << "Surface :" << r.surface() <<endl;
+	cout << "Périmètre :" << r.perimetre() <<endl;
 
 	return 0;
 
 }
-
 
 
