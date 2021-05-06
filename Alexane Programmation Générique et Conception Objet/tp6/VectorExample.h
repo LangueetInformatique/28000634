@@ -1,6 +1,5 @@
 #include <vector>
 #include <iostream>
-
 using namespace std;
 
 void addEltInt(vector <int> &V, int &elt) {
@@ -11,8 +10,7 @@ void addEltString(vector <string> S, string elt) {
 	S.push_back(elt);
 }
 
-int main() {
-
+void EssaisVecteurs() {
 	vector <int> v(5); // 5 = taille du tableau, 4 = valeurs que l'on ajoute
 	v[0] = 12;
 	v[1] = 24;
@@ -70,7 +68,10 @@ int main() {
 	for (int elt : v) {
 			cout << elt <<endl;
 		}
-
-return 0;
-
 }
+
+
+// ajouter un élément : push_back
+// supprimer un élément : pop_back
+// pas de fonction pour ajouter ou supprimer au début
+// ceci est toutefois possible avec la deque
